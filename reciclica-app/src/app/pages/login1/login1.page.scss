@@ -1,0 +1,60 @@
+ion-content {
+  --background: #f1f1f1;
+  text-align: center;
+  display: flex;
+  justify-content: center; /* Щоб фото було по центру */
+  align-items: center;
+}
+
+.title {
+  font-family: "Mulish", sans-serif;
+  font-weight: 800; /* ExtraBold */
+  font-size: 40px !important;
+  color: #324b49 !important; /* Можеш змінити колір за потреби */
+  text-align: center;
+  line-height: 123px;
+  margin-top: 10px;
+}
+
+.subtitle {
+  font-family: "Mulish", sans-serif !important;
+  font-weight: 400 !important; /* Reglar */
+  font-size: 20px;
+  color: #324b49; /* Можеш змінити колір за потреби */
+  text-align: center;
+  margin-top: -40px;
+}
+.logo {
+  width: 85px; /* Ширина */
+  height: auto; /* Авто висота, щоб не спотворювати */
+}
+.custom-button {
+  width: 335px; /* Ширина кнопки */
+  height: 65px; /* Висота кнопки */
+  font-size: 18px; /* Розмір шрифту */
+  font-weight: bold; /* Товщина шрифту */
+  color: #000000; /* Колір тексту */
+  --background: #aad5d1; /* Колір кнопки */
+  border-radius: 25px; /* Закруглені кути */
+  margin: 10px auto; /* Відступи зверху і знизу */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shelter-button {
+  margin-top: 47px;
+}
+
+.volunteer-button {
+  margin-top: 117px;
+}
+
+.small-paws {
+  position: absolute;
+  bottom: 20px; /* Відступ від верхнього краю */
+  right: -35px; /* Відступ від правого краю */
+  width: 500px; /* Або будь-який інший розмір */
+  height: auto;
+  object-fit: contain;
+  max-width: none;
+}
