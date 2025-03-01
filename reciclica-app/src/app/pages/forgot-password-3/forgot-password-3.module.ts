@@ -13,14 +13,8 @@ import { ForgotPassword3Page } from './forgot-password-3.page';
     CommonModule,
     FormsModule,
     IonicModule,
-<<<<<<< HEAD:reciclica-app/src/app/pages/login1/login1.module.ts
-    Login1PageRoutingModule,
-    Login1Page,
-=======
     ForgotPassword3PageRoutingModule,
-    ForgotPassword3Page
->>>>>>> 5264763 (Create page Create-account-1, page Forgot-password-1,2,3,4. Design this):reciclica-app/src/app/pages/forgot-password-3/forgot-password-3.module.ts
-  ],
+    ForgotPassword3Page],
   declarations: [],
 })
 export class ForgotPassword3PageModule {}

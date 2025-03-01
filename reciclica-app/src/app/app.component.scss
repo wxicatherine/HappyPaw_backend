@@ -51,20 +51,13 @@ ion-content {
 
 .small-paws {
   position: absolute;
-<<<<<<< HEAD
-  bottom: 15px; /* Відступ від верхнього краю */
-  right: -60px; /* Відступ від правого краю */
-  width: 530px; /* Або будь-який інший розмір */
-  height: auto;
-  object-fit: contain;
-  max-width: none;
-}
-=======
-  bottom: 20px; /* Відступ від верхнього краю */
-  right: -35px; /* Відступ від правого краю */
-  width: 500px; /* Або будь-який інший розмір */
-  height: auto;
-  object-fit: contain;
-  max-width: none;
-}
->>>>>>> 5264763 (Create page Create-account-1, page Forgot-password-1,2,3,4. Design this)
+  bottom: 20px;
+    /* Відступ від верхнього краю */
+    right: -35px;
+    /* Відступ від правого краю */
+    width: 500px;
+    /* Або будь-який інший розмір */
+    height: auto;
+    object-fit: contain;
+    max-width: none;
+  }
