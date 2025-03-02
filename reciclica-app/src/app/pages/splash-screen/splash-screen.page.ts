@@ -16,8 +16,8 @@ export class SplashScreenPage implements OnInit {
 
   ngOnInit() {
     setTimeout(() => {
-      this.router.navigate(['/create-account-1']); // Переходимо на головну сторінку
-    }, 3000); // Час показу Splash Screen
+      this.router.navigate(['/sign-in-1'],{ replaceUrl: true }); // Переходимо на головну сторінку
+    }, 4500); // Час показу Splash Screen
   }
 
 }

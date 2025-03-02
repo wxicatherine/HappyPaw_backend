@@ -1,0 +1,38 @@
+ion-content {
+  --background: #f1f1f1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  /* Щоб фото було по центру */
+  align-items: center;
+}
+
+.title {
+  font-size: 30px;
+  /* Розмір шрифту */
+  font-weight: 700;
+  /* Товщина шрифту (жирний) */
+  color: #1d2d29;
+  /* Колір тексту */
+  text-align: left;
+  /* Вирівнювання тексту */
+  margin-left: 18px;
+  margin-bottom: -10px;
+  /* Відступ знизу */
+}
+
+.subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  color: #555;
+  /* Трохи сіріший колір */
+  text-align: left;
+  margin-left: 18px;
+}
+
+.logo {
+  width: 85px;
+  /* Ширина */
+  height: auto;
+  /* Авто висота, щоб не спотворювати */
+}
