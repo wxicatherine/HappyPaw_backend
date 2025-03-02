@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-confirm-1',
@@ -9,11 +10,12 @@ import { IonicModule } from '@ionic/angular';
     IonicModule
   ]
 })
-export class Confirm1Page implements OnInit {
+export class Confirm1Page  {
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor(private router: Router) { }
+ 
+  goConfirm2() {
+      this.router.navigate(['/confirm-2']);
   }
 
 }

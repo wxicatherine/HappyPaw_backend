@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sign-in-2',
@@ -9,11 +10,22 @@ import { IonicModule } from '@ionic/angular';
     IonicModule
   ]
 })
-export class SignIn2Page implements OnInit {
+export class SignIn2Page  {
 
-  constructor() { }
-
-  ngOnInit() {
+    constructor(private router: Router) { }
+  
+  
+    goConfirm1() {
+      this.router.navigate(['/confirm-1']);
   }
+  
+   goForgotPassword1() {
+      this.router.navigate(['/forgot-password-1']);
+  }
+
+  goSignUp() {
+      this.router.navigate(['/create-account-2']);
+  }
+  
 
 }

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sign-in-1',
@@ -9,11 +10,14 @@ import { IonicModule } from '@ionic/angular';
     IonicModule
   ]
 })
-export class SignIn1Page implements OnInit {
+export class SignIn1Page {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
-  ngOnInit() {
+
+  goToSignIn2() {
+    this.router.navigate(['/sign-in-2']);
   }
+  
 
 }

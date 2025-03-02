@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-forgot-password-1',
@@ -9,11 +10,16 @@ import { IonicModule } from '@ionic/angular';
     IonicModule
   ]
 })
-export class ForgotPassword1Page implements OnInit {
+export class ForgotPassword1Page{
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor(private router: Router) { }
+  
+  
+    goForgotPassword2() {
+      this.router.navigate(['/forgot-password-2']);
   }
 
+  goSignIn() {
+      this.router.navigate(['/sign-in-2']);
+  }
 }
