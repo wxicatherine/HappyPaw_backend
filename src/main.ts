@@ -17,7 +17,7 @@ async function bootstrap() {
   app.enableCors();
 
   const PORT = process.env["PORT"] ?? "3000"; // Указываем значение по умолчанию
-await app.listen(parseInt(PORT, 10)); // Преобразуем в число
+  await app.listen(3000); // Преобразуем в число
 console.log(`🚀 Server running on http://localhost:${PORT}`);
 }
 bootstrap();
