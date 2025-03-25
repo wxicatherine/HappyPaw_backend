@@ -1,7 +1,7 @@
 
 import { Controller, Get, Post, Delete, Param, Body } from '@nestjs/common';
 import { ShelterService } from './shelter.service';
-
+import { Shelters} from 'src/common/interfaces/user.interface';
 @Controller('shelter')
 export class ShelterController {
   constructor(private readonly shelterService: ShelterService) {}  
@@ -17,7 +17,7 @@ export class ShelterController {
   }
 
   @Post()
-  create(@Body() data: any) {
+  create(@Body() data: Shelters) {
     return this.shelterService.create(data);
   }
 

@@ -1,7 +1,7 @@
 
 import { Controller, Get, Post, Delete, Param, Body } from '@nestjs/common';
 import { CategoriesService } from './categories.service';
-
+import { Categories } from 'src/common/interfaces/user.interface';
 @Controller('categories')
 export class CategoriesController {
   constructor(private readonly categoriesServiceService: CategoriesService) {}
@@ -17,7 +17,7 @@ export class CategoriesController {
   }
 
   @Post()
-  create(@Body() data: any) {
+  create(@Body() data:Categories) {
     return this.categoriesServiceService.create(data);
   }
 

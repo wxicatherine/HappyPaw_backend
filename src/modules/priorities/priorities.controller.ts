@@ -1,7 +1,7 @@
 
 import { Controller, Get, Post, Delete, Param, Body } from '@nestjs/common';
 import { PrioritiesService } from './priorities.service';
-
+import { Priorities } from 'src/common/interfaces/user.interface';
 @Controller('priorities')
 export class PrioritiesController {
   constructor(private readonly prioritiesServiceService: PrioritiesService) {}
@@ -17,7 +17,7 @@ export class PrioritiesController {
   }
 
   @Post()
-  create(@Body() data: any) {
+  create(@Body() data: Priorities) {
     return this.prioritiesServiceService.create(data);
   }
 

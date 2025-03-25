@@ -1,7 +1,7 @@
 
 import { Controller, Get, Post, Delete, Param, Body } from '@nestjs/common';
 import { ReviewsService } from './reviews.service';
-
+import { Reviews } from 'src/common/interfaces/user.interface';
 @Controller('reviews')
 export class ReviewsController {
   constructor(private readonly reviewsServiceService: ReviewsService) {}
@@ -17,7 +17,7 @@ export class ReviewsController {
   }
 
   @Post()
-  create(@Body() data: any) {
+  create(@Body() data: Reviews) {
     return this.reviewsServiceService.create(data);
   }
 

@@ -2,6 +2,7 @@
 import { Controller, Get, Post, Delete, Param, Body } from '@nestjs/common';
 import { SpeciesService } from './species.service';
 
+import { Species } from 'src/common/interfaces/user.interface';
 @Controller('species')
 export class SpeciesController {
   constructor(private readonly speciesServiceService: SpeciesService) {}
@@ -17,7 +18,7 @@ export class SpeciesController {
   }
 
   @Post()
-  create(@Body() data: any) {
+  create(@Body() data: Species) {
     return this.speciesServiceService.create(data);
   }
 

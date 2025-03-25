@@ -1,7 +1,7 @@
 
 import { Controller, Get, Post, Delete, Param, Body } from '@nestjs/common';
 import { UserSessionsService } from './user_sessions.service';
-
+import { UserSessions } from 'src/common/interfaces/user.interface';
 @Controller('user_sessions')
 export class UserSessionsController {
   constructor(private readonly user_sessionsServiceService: UserSessionsService) {}
@@ -17,7 +17,7 @@ export class UserSessionsController {
   }
 
   @Post()
-  create(@Body() data: any) {
+  create(@Body() data: UserSessions) {
     return this.user_sessionsServiceService.create(data);
   }
 

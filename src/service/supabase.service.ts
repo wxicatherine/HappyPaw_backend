@@ -8,8 +8,8 @@ export class SupabaseService {
 
   constructor(private configService: ConfigService) {
     this.supabase = createClient(
-      this.configService.get<string>('https://qhngnslbrbdzwxtuxlmf.supabase.co'),
-      this.configService.get<string>('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFobmduc2xicmJkend4dHV4bG1mIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDA1NzY2NDAsImV4cCI6MjA1NjE1MjY0MH0.j9t_m_O1qkcx_TavvQxinwxX8ZjvnWXMLlOjGJ8NlYc'),
+      this.configService.get<string>('SUPABASE_URL', ''),
+      this.configService.get<string>('SUPABASE_KEY', ''),
     );
   }
 

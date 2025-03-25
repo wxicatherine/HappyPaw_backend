@@ -1,7 +1,7 @@
 
 import { Controller, Get, Post, Delete, Param, Body } from '@nestjs/common';
 import { LocationService } from './location.service';
-
+import { Locations } from 'src/common/interfaces/user.interface';
 @Controller('location')
 export class LocationController {
   constructor(private readonly locationServiceService: LocationService) {}
@@ -17,7 +17,7 @@ export class LocationController {
   }
 
   @Post()
-  create(@Body() data: any) {
+  create(@Body() data: Locations) {
     return this.locationServiceService.create(data);
   }
 

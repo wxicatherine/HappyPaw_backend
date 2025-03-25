@@ -1,5 +1,6 @@
 import { Controller, Get, Post, Delete, Param, Body } from '@nestjs/common';
 import { AdoptionRequestsService } from './adoption_requests.service';
+import { AdoptionRequests } from 'src/common/interfaces/user.interface';
 
 @Controller('adoption-requests') // Указывает префикс маршрута
 export class AdoptionRequestsController {
@@ -16,8 +17,8 @@ export class AdoptionRequestsController {
   }
 
   @Post() // Обрабатывает POST-запрос на /adoption-requests
-  create(@Body() adoptionData: { volunteer_id: string; shelter_id: string; animal_id: string; status: string }) {
-    return this.adoptionRequestsService.create(adoptionData);
+  create(@Body() adoptionRequest: AdoptionRequests) {
+    return this.adoptionRequestsService.create(adoptionRequest);
   }
 
   @Delete(':id') // Обрабатывает DELETE-запрос на /adoption-requests/:id

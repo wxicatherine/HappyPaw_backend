@@ -1,6 +1,7 @@
 
 import { Controller, Get, Post, Delete, Param, Body } from '@nestjs/common';
 import { DonationService } from './donation.service';
+import { Donation } from 'src/common/interfaces/user.interface';
 
 @Controller('donation')
 export class DonationController {
@@ -17,7 +18,7 @@ export class DonationController {
   }
 
   @Post()
-  create(@Body() data: any) {
+  create(@Body() data: Donation) {
     return this.donationService.create(data);
   }
 
