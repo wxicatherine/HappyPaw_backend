@@ -1,9 +1,9 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule } from '@nestjs/config';
-import { AuthorizationModule } from './app/basedata/authorization/authorization.module';
-import { SupabaseService } from './config/supabase.service';
-import { AnimalsModule } from './app/basedata/animals/animals.module'; // Імпортуємо AnimalsModule
+import { AuthorizationModule } from './basedata/authorization/authorization.module';
+import { SupabaseService } from './service/supabase.service';
+import { AnimalsModule } from './basedata/animals/animals.module'; // Імпортуємо AnimalsModule
 
 @Module({
   providers: [SupabaseService],
