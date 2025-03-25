@@ -3,7 +3,7 @@ import { Controller, Get, Post, Delete, Param, Body } from '@nestjs/common';
 import { VolunteerService } from './volunteer.service';
 import { Volunteer } from 'src/common/interfaces/user.interface';
 @Controller('user_sessions')
-export class UserSessionsController {
+export class VolunteerController {
   constructor(private readonly user_sessionsServiceService: VolunteerService) {}
 
   @Get()

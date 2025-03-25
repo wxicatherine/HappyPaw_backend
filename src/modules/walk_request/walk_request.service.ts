@@ -1,6 +1,6 @@
 
 import { Injectable } from '@nestjs/common';
-import { SupabaseService } from '../../../config/supabase.service';
+import { SupabaseService } from '../../service/supabase.service';
 
 @Injectable()
 export class WalkRequestService {
