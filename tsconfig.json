@@ -10,7 +10,17 @@
       "rootDir": "./src",
       "esModuleInterop": true,
       "forceConsistentCasingInFileNames": true,
-      "skipLibCheck": true
+      "skipLibCheck": true,
+      "baseUrl": "./",
+    "paths": {
+      "src/*": ["src/*"]
+    },
+    "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
     }
   }
   
